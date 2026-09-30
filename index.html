@@ -86,8 +86,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:cen
 #particles{position:absolute;inset:0;z-index:-1}
 .hero-kicker{font-family:var(--font-m);color:var(--cyan);font-size:.95rem;margin-bottom:22px;letter-spacing:.06em}
 .hero-kicker .prompt{color:var(--pink)}
-.hero h1{font-family:var(--font-d);font-weight:800;line-height:.95;letter-spacing:-.01em;
-  font-size:clamp(3.2rem,12vw,10.5rem);text-transform:uppercase;position:relative}
+.hero h1{font-family:var(--font-d);font-weight:800;line-height:1.04;letter-spacing:-.01em;
+  text-transform:uppercase;position:relative;display:flex;flex-direction:column}
+.hero h1 .name{font-size:clamp(2.3rem,7.6vw,5.6rem)}
+.hero h1 .tagline{font-size:clamp(1.4rem,3.6vw,2.6rem);margin-top:14px;letter-spacing:.01em}
 .hero h1 .grad{background:linear-gradient(92deg,var(--violet) 5%,var(--cyan) 45%,var(--pink) 90%);
   -webkit-background-clip:text;background-clip:text;color:transparent}
 .glitch{position:relative;display:inline-block}
@@ -259,7 +261,7 @@ body.party{animation:hue 4s linear infinite}
 <header class="hero" id="top">
   <canvas id="particles"></canvas>
   <div class="hero-kicker"><span class="prompt">➜</span> ~ hello world, i'm</div>
-  <h1><span class="glitch" data-t="YASHWANTH">YASHWANTH</span><br><span class="grad">BUILDS THINGS.</span></h1>
+  <h1><span class="name glitch" data-t="YASHWANTH NOMULA">YASHWANTH NOMULA</span><span class="tagline grad">builds intelligent things.</span></h1>
   <div class="type-line"><span class="prompt" style="color:var(--pink)">❯</span> <span id="typer"></span><span class="caret">|</span></div>
   <p class="hero-sub">Python developer & ML engineer crafting <strong>autonomous AI agents</strong>, shipping a <strong>new project every single day</strong>, and contributing to <strong>open source</strong>. If it runs on Python, I've probably broken it and fixed it twice.</p>
   <div class="hero-cta">
